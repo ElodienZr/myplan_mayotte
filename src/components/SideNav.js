@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link, useLocation  } from "react-router-dom";
 
 // import AuthContext from "../../src/context/AuthContext";
@@ -20,7 +20,7 @@ function SideNav() {
           {/* Sidebar user panel (optional) */}
           <div className="user-panel mt-3 pb-3 mb-3 d-flex">
             <div className="image">
-              <img src="dist/img/user5-128x128.jpg" className="img-circle elevation-2" alt="User Image" />
+              <img src="dist/img/user5-128x128.jpg" className="img-circle elevation-2" alt="User" />
             </div>
             <div className="info">
               <a href className="d-block">Aïchat GERA</a>
@@ -61,7 +61,7 @@ function SideNav() {
             </a>
           </li> */}
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href className="nav-link">
               <i className="nav-icon fas fa-copy" />
               <p>
                 Formation
@@ -77,13 +77,13 @@ function SideNav() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" className="nav-link">
+                <a href className="nav-link">
                   <i className="far fa-circle nav-icon" />
                   <p>Revit</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="pages/layout/boxed.html" className="nav-link">
+                <a href className="nav-link">
                   <i className="far fa-circle nav-icon" />
                   <p>SketchUp</p>
                 </a>
@@ -91,7 +91,7 @@ function SideNav() {
             </ul>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href className="nav-link">
               <i className="nav-icon fas fa-chart-pie" />
               <p>
                 Cursus
@@ -100,25 +100,25 @@ function SideNav() {
             </a>
             <ul className="nav nav-treeview">
               <li className="nav-item">
-                <a href="pages/charts/chartjs.html" className="nav-link">
+                <a href className="nav-link">
                   <i className="far fa-circle nav-icon" />
                   <p>Section 1</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="pages/charts/flot.html" className="nav-link">
+                <a href className="nav-link">
                   <i className="far fa-circle nav-icon" />
                   <p>Section 2</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="pages/charts/inline.html" className="nav-link">
+                <a href className="nav-link">
                   <i className="far fa-circle nav-icon" />
                   <p>Section 3</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="pages/charts/uplot.html" className="nav-link">
+                <a href className="nav-link">
                   <i className="far fa-circle nav-icon" />
                   <p>Section 4</p>
                 </a>
@@ -126,7 +126,7 @@ function SideNav() {
             </ul>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href className="nav-link">
               <i className="nav-icon fas fa-edit" />
               <p>
                 Inscription
@@ -135,19 +135,19 @@ function SideNav() {
             </a>
             <ul className="nav nav-treeview">
               <li className="nav-item">
-                <a href="pages/forms/general.html" className="nav-link">
+               <Link to="/reservezentretients" className={`nav-link ${location.pathname === "/reservezentretients" ? "active" : ""}`}>
                   <i className="far fa-circle nav-icon" />
                   <p>Réservez entretiens</p>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="pages/forms/advanced.html" className="nav-link">
+                <a href className="nav-link">
                   <i className="far fa-circle nav-icon" />
                   <p>Choisissez session</p>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="pages/forms/editors.html" className="nav-link">
+                <a href className="nav-link">
                   <i className="far fa-circle nav-icon" />
                   <p>Débutez formation</p>
                 </a>
@@ -156,7 +156,7 @@ function SideNav() {
           </li>
           <li className="nav-header">EMPLOI DU TEMPS</li>
           <li className="nav-item">
-            <a href="pages/calendar.html" className="nav-link">
+            <a href className="nav-link">
               <i className="nav-icon far fa-calendar-alt" />
               <p>
                 Calendrier

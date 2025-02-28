@@ -11,15 +11,18 @@ $(function () {
   'use strict'
 
   // Make the dashboard widgets sortable Using jquery UI
-  $('.connectedSortable').sortable({
-    placeholder: 'sort-highlight',
-    connectWith: '.connectedSortable',
-    handle: '.card-header, .nav-tabs',
+  if ($(".connectedSortable").length > 0) {
+  $(".connectedSortable").sortable({
+    placeholder: "sort-highlight",
+    connectWith: ".connectedSortable",
+    handle: ".card-header, .nav-tabs",
     forcePlaceholderSize: true,
     zIndex: 999999
-  })
-  $('.connectedSortable .card-header').css('cursor', 'move')
-
+  });
+} else {
+  console.error("L'élément .connectedSortable n'existe pas.");
+}
+}, []); // Exécution une seule fois après le montage du composant
   // jQuery UI sortable for the todo list
   $('.todo-list').sortable({
     placeholder: 'sort-highlight',

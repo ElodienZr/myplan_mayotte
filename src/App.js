@@ -9,6 +9,7 @@ import SideNav from "./components/SideNav";
 import Apropos from "./pages/Apropos"; // Page À propos
 import Contact from "./pages/Contact"; 
 import Autocad from "./pages/Formation/Autocad"; 
+import Reservezentretients from "./pages/Inscription/Reservezentretients"; 
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/apropos" element={<Apropos />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/autocad" element={<Autocad />} />
+            <Route path="/reservezentretients" element={<Reservezentretients />} />
           </Routes>
         </div>
         <Footer />
