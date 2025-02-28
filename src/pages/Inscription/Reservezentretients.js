@@ -83,16 +83,22 @@ export default function ReservezEntretien() {
   };
 
   return (
-    <div className="content-wrapper">
-      <section className="content-header">
-        <div className="container-fluid">
-          <div className="row mb-2">
-            <div className="col-sm-6">
-              <h1>Inscription</h1>
-            </div>
+    <div class="content-wrapper">
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Calender</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href>Accueil</a></li>
+              <li class="breadcrumb-item active">Calendrier</li>
+            </ol>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
       {/* Formulaire de réservation */}
       <section className="content d-flex justify-content-center align-items-center min-vh-100">
         <div className="container">

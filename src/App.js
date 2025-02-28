@@ -10,7 +10,7 @@ import Apropos from "./pages/Apropos"; // Page À propos
 import Contact from "./pages/Contact"; 
 import Autocad from "./pages/Formation/Autocad"; 
 import Reservezentretients from "./pages/Inscription/Reservezentretients"; 
-
+import Calendrier from "./pages/Calendrier";
 function App() {
   return (
     <Router>
@@ -22,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/apropos" element={<Apropos />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/calendrier" element={<Calendrier />} />
             <Route path="/autocad" element={<Autocad />} />
             <Route path="/reservezentretients" element={<Reservezentretients />} />
           </Routes>

@@ -156,13 +156,13 @@ function SideNav() {
           </li>
           <li className="nav-header">EMPLOI DU TEMPS</li>
           <li className="nav-item">
-            <a href className="nav-link">
+          <Link to="/calendrier" className={`nav-link ${location.pathname === "/calendrier" ? "active" : ""}`}>
               <i className="nav-icon far fa-calendar-alt" />
               <p>
                 Calendrier
                 <span className="badge badge-info right"></span>
               </p>
-            </a>
+          </Link>
           </li>
           <li className="nav-header">A propos</li>
           <li className="nav-item">
