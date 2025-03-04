@@ -88,12 +88,12 @@ export default function ReservezEntretien() {
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Calender</h1>
+            <h1>Reservation entretients</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href>Accueil</a></li>
-              <li class="breadcrumb-item active">Calendrier</li>
+              <li class="breadcrumb-item active">Reservation entretient</li>
             </ol>
           </div>
         </div>
@@ -171,7 +171,8 @@ export default function ReservezEntretien() {
         </div>
       </section>
             {/* Barre de recherche */}
-        
+      <section class="content">
+            <div class="container-fluid">
         <div className="col-md-3 text-right"> 
         <input
           type="text"
@@ -217,6 +218,8 @@ export default function ReservezEntretien() {
           </table>
         </div>
       </div>
+      </div>
+    </section>
 
               {/* Modal de confirmation */}
 {showConfirmation && (

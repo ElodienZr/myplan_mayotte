@@ -10,6 +10,7 @@ import Apropos from "./pages/Apropos"; // Page À propos
 import Contact from "./pages/Contact"; 
 import Autocad from "./pages/Formation/Autocad"; 
 import Reservezentretients from "./pages/Inscription/Reservezentretients"; 
+import Choisissezsession from "./pages/Inscription/Choisissezsession"; 
 import Calendrier from "./pages/Calendrier";
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/calendrier" element={<Calendrier />} />
             <Route path="/autocad" element={<Autocad />} />
             <Route path="/reservezentretients" element={<Reservezentretients />} />
+            <Route path="/choisissezsession" element={<Choisissezsession />} />
           </Routes>
         </div>
         <Footer />

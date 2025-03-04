@@ -141,10 +141,10 @@ function SideNav() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a href className="nav-link">
+              <Link to="/choisissezsession" className={`nav-link ${location.pathname === "/choisissezsession" ? "active" : ""}`}>
                   <i className="far fa-circle nav-icon" />
                   <p>Choisissez session</p>
-                </a>
+              </Link>
               </li>
               <li className="nav-item">
                 <a href className="nav-link">
